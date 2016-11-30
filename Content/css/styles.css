@@ -1,3 +1,48 @@
 .centered {
   text-align: center;
 }
+
+#rules {
+  width: 30%;
+}
+
+
+.rock {
+  background-image: url("../img/rock.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.paper {
+  background-image: url("../img/paper.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.scissors {
+  background-image: url("../img/scissors.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.lizard {
+  background-image: url("../img/lizard.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.spock {
+  background-image: url("../img/spock.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+button {
+  height: 80px;
+  width: 80px;
+}

@@ -39,27 +39,83 @@ namespace RockPaperScissors.Objects
     {
       if(_player1Choice == "rock" && _player2Choice == "scissors")
       {
-        return "Player 1 wins with Rock!";
+        return "Rock crushes scissors. Player 1 Wins!";
       }
       else if (_player2Choice == "rock" && _player1Choice == "scissors")
       {
-        return "Player 2 wins with Rock!";
+        return "Rock crushes scissors. Player 2 Wins!";
+      }
+      else if (_player1Choice == "rock" && _player2Choice == "lizard")
+      {
+        return "Rock crushes lizard. Player 1 Wins!";
+      }
+      else if (_player2Choice == "rock" && _player1Choice == "lizard")
+      {
+        return "Rock crushes lizard. Player 2 Wins!";
       }
       else if (_player1Choice == "paper" && _player2Choice == "rock")
       {
-        return "Player 1 wins with Paper!";
+        return "Paper covers rock. Player 1 Wins!";
       }
       else if (_player2Choice == "paper" && _player1Choice == "rock")
       {
-        return "Player 2 wins with Paper!";
+        return "Paper covers rock. Player 2 Wins!";
+      }
+      else if (_player1Choice == "paper" && _player2Choice == "Spock")
+      {
+        return "Paper disproves Spock. Player 1 Wins!";
+      }
+      else if (_player2Choice == "paper" && _player1Choice == "Spock")
+      {
+        return "Paper disproves Spock. Player 2 Wins!";
       }
       else if (_player1Choice == "scissors" && _player2Choice == "paper")
       {
-        return "Player 1 wins with Scissors!";
+        return "Scissors cut paper. Player 1 Wins!";
       }
       else if(_player2Choice == "scissors" && _player1Choice == "paper")
       {
-        return "Player 2 wins with Scissors!";
+        return "Scissors cut paper. Player 2 Wins!";
+      }
+      else if (_player1Choice == "scissors" && _player2Choice == "lizard")
+      {
+        return "Scissors decapitates lizard. Player 1 Wins!";
+      }
+      else if (_player2Choice == "scissors" && _player1Choice == "lizard")
+      {
+        return "Scissors decapitates lizard. Player 2 Wins!";
+      }
+      else if (_player1Choice == "lizard" && _player2Choice == "paper")
+      {
+        return "Lizard eats paper. Player 1 Wins!";
+      }
+      else if(_player2Choice == "lizard" && _player1Choice == "paper")
+      {
+        return "Lizard eats paper. Player 2 Wins!";
+      }
+      else if (_player1Choice == "lizard" && _player2Choice == "Spock")
+      {
+        return "Lizard poisions Spock. Player 1 Wins!";
+      }
+      else if (_player2Choice == "lizard" && _player1Choice == "Spock")
+      {
+        return "Lizard poisions Spock. Player 2 Wins!";
+      }
+      else if (_player1Choice == "Spock" && _player2Choice == "rock")
+      {
+        return "Spock vaporizes rock. Player 1 Wins!";
+      }
+      else if(_player2Choice == "Spock" && _player1Choice == "rock")
+      {
+        return "Spock vaporizes rock. Player 2 Wins!";
+      }
+      else if (_player1Choice == "Spock" && _player2Choice == "scissors")
+      {
+        return "Spock smashes scissors. Player 1 Wins!";
+      }
+      else if (_player2Choice == "Spock" && _player1Choice == "scissors")
+      {
+        return "Spock smashes scissors. Player 2 Wins!";
       }
       else
       {

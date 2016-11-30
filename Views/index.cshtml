@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Rock Paper Scissors</title>
+    <title>Rock Paper Scissors Lizard Spock</title>
     <link rel="stylesheet" href="Content/css/bootstrap.css" type="text/css">
     <link rel="stylesheet" href="Content/css/styles.css" type="text/css">
   </head>
   <body>
     <div class="container">
       <div class="jumbotron centered">
-        <h1>Rock Paper Scissors</h1>
+        <h1>Rock Paper Scissors Lizard Spock</h1>
+        <img id="rules" src="Content/img/rules.gif">
       </div>
       <div class="row">
         <div class="col-md-6">
           <div class="well centered">
             <h3>Player 1 Choice:</h3>
             <form class="" action="/choice1" method="post">
-              <button type="submit" name="player1" value="rock">Rock</button>
-              <button type="submit" name="player1" value="paper">Paper</button>
-              <button type="submit" name="player1" value="scissors">Scissors</button>
+              <button class="rock" type="submit" name="player1" value="rock"></button>
+              <button class="paper" type="submit" name="player1" value="paper"></button>
+              <button class="scissors" type="submit" name="player1" value="scissors"></button>
+              <button class="lizard" type="submit" name="player1" value="lizard"></button>
+              <button class="spock" type="submit" name="player1" value="Spock"></button>
             </form>
           </div>
         </div>
@@ -25,9 +28,11 @@
           <div class="well centered">
             <h3>Player 2 Choice:</h3>
             <form class="" action="/choice2" method="post">
-              <button type="submit" name="player2" value="rock">Rock</button>
-              <button type="submit" name="player2" value="paper">Paper</button>
-              <button type="submit" name="player2" value="scissors">Scissors</button>
+              <button class="rock" type="submit" name="player2" value="rock"></button>
+              <button class="paper" type="submit" name="player2" value="paper"></button>
+              <button class="scissors" type="submit" name="player2" value="scissors"></button>
+              <button class="lizard" type="submit" name="player2" value="lizard"></button>
+              <button class="spock" type="submit" name="player2" value="Spock"></button>
             </form>
           </div>
         </div>
