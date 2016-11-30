@@ -6,11 +6,33 @@ namespace RockPaperScissors.Objects
   {
     private string _player1Choice;
     private string _player2Choice;
+    public static List<Game> gameInstances = new List<Game>{};
 
     public Game(string player1Choice, string player2Choice)
     {
       _player1Choice = player1Choice;
       _player2Choice = player2Choice;
+      gameInstances.Add(this);
+    }
+
+    public string getChoice1()
+    {
+      return _player1Choice;
+    }
+
+    public void setChoice1(string choice)
+    {
+      _player1Choice = choice;
+    }
+
+    public string getChoice2()
+    {
+      return _player2Choice;
+    }
+
+    public void setChoice2(string choice)
+    {
+      _player2Choice = choice;
     }
 
     public string DetermineWinner()

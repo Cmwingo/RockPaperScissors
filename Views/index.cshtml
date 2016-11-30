@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="Content/css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="Content/css/styles.css" type="text/css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron centered">
+        <h1>Rock Paper Scissors</h1>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="well centered">
+            <h3>Player 1 Choice:</h3>
+            <form class="" action="/choice1" method="post">
+              <button type="submit" name="player1" value="rock">Rock</button>
+              <button type="submit" name="player1" value="paper">Paper</button>
+              <button type="submit" name="player1" value="scissors">Scissors</button>
+            </form>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="well centered">
+            <h3>Player 2 Choice:</h3>
+            <button type="button" name="button">Rock</button>
+            <button type="button" name="button">Paper</button>
+            <button type="button" name="button">Scissors</button>
+          </div>
+        </div>
+      </div>
+      @if (Model != null)
+      {
+        <div class="row">
+          <div class="col-md-12">
+            <div class="well centered">
+              <h3>Result:</h3>
+              <span>@Model</span>
+            </div>
+          </div>
+        </div>
+      }
+    </div>
+  </body>
+</html>
