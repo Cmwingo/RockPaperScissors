@@ -24,12 +24,22 @@
         <div class="col-md-6">
           <div class="well centered">
             <h3>Player 2 Choice:</h3>
-            <button type="button" name="button">Rock</button>
-            <button type="button" name="button">Paper</button>
-            <button type="button" name="button">Scissors</button>
+            <form class="" action="/choice2" method="post">
+              <button type="submit" name="player2" value="rock">Rock</button>
+              <button type="submit" name="player2" value="paper">Paper</button>
+              <button type="submit" name="player2" value="scissors">Scissors</button>
+            </form>
           </div>
         </div>
       </div>
+      @if (Model == null)
+      {
+      <div class="col-md-12 centered">
+        <form class="" action="/outcome" method="get">
+          <button type="submit" name="button">1, 2, 3, Shoot!</button>
+        </form>
+      </div>
+      }
       @if (Model != null)
       {
         <div class="row">
@@ -39,6 +49,11 @@
               <span>@Model</span>
             </div>
           </div>
+        </div>
+        <div class="col-md-12 centered">
+          <form class="" action="/reset" method="post">
+            <button type="submit" name="button">Play Another Game</button>
+          </form>
         </div>
       }
     </div>
