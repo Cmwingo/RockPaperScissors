@@ -19,6 +19,14 @@ namespace RockPaperScissors.Objects
       {
         return "Rock wins!";
       }
+      else if ((_player1Choice == "paper" && _player2Choice == "rock") || (_player2Choice == "paper" && _player1Choice == "rock"))
+      {
+        return "Paper wins!";
+      }
+      else if ((_player1Choice == "scissors" && _player2Choice == "paper") || (_player2Choice == "scissors" && _player1Choice == "paper"))
+      {
+        return "Scissors wins!";
+      }
       else
       {
         return "Draw";
