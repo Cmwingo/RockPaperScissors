@@ -37,21 +37,33 @@ namespace RockPaperScissors.Objects
 
     public string DetermineWinner()
     {
-      if((_player1Choice == "rock" && _player2Choice == "scissors") || (_player2Choice == "rock" && _player1Choice == "scissors"))
+      if(_player1Choice == "rock" && _player2Choice == "scissors")
       {
-        return "Rock wins!";
+        return "Player 1 wins with Rock!";
       }
-      else if ((_player1Choice == "paper" && _player2Choice == "rock") || (_player2Choice == "paper" && _player1Choice == "rock"))
+      else if (_player2Choice == "rock" && _player1Choice == "scissors")
       {
-        return "Paper wins!";
+        return "Player 2 wins with Rock!";
       }
-      else if ((_player1Choice == "scissors" && _player2Choice == "paper") || (_player2Choice == "scissors" && _player1Choice == "paper"))
+      else if (_player1Choice == "paper" && _player2Choice == "rock")
       {
-        return "Scissors wins!";
+        return "Player 1 wins with Paper!";
+      }
+      else if (_player2Choice == "paper" && _player1Choice == "rock")
+      {
+        return "Player 2 wins with Paper!";
+      }
+      else if (_player1Choice == "scissors" && _player2Choice == "paper")
+      {
+        return "Player 1 wins with Scissors!";
+      }
+      else if(_player2Choice == "scissors" && _player1Choice == "paper")
+      {
+        return "Player 2 wins with Scissors!";
       }
       else
       {
-        return "Draw";
+        return "It's a Draw";
       }
     }
   }

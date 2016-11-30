@@ -9,21 +9,21 @@ namespace RockPaperScissors
     public void GameTest1_RockBeatsScissors_True()
     {
       Game testGame = new Game("scissors", "rock");
-      Assert.Equal("Rock wins!", testGame.DetermineWinner());
+      Assert.Equal("Player 2 wins with Rock!", testGame.DetermineWinner());
     }
 
     [Fact]
     public void GameTest2_PaperBeatsRock_True()
     {
       Game testGame = new Game("paper", "rock");
-      Assert.Equal("Paper wins!", testGame.DetermineWinner());
+      Assert.Equal("Player 1 wins with Paper!", testGame.DetermineWinner());
     }
 
     [Fact]
     public void GameTest3_ScissorsBeatsPaper_True()
     {
       Game testGame = new Game("paper","scissors");
-      Assert.Equal("Scissors wins!", testGame.DetermineWinner());
+      Assert.Equal("Player 2 wins with Scissors!", testGame.DetermineWinner());
     }
   }
 }
