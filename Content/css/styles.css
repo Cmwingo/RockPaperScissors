@@ -6,7 +6,9 @@
   width: 30%;
 }
 
-
+#result {
+  font-size: 250%;
+}
 .rock {
   background-image: url("../img/rock.jpg");
   background-position: center center;

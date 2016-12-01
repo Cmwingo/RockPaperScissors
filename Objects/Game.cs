@@ -35,6 +35,25 @@ namespace RockPaperScissors.Objects
       _player2Choice = choice;
     }
 
+    public string TestFunction()
+    {
+      // If Player 1  and Player 2 did not choose the same thing,
+      // If Player 2 chose the losing option(in relation to Player 1's choice), Player 1 Wins, otherwise Player 2 wins
+      if (_player1Choice == "rock" && _player2Choice != "rock")
+      {
+        return (_player2Choice == "scissors") ? "Rock crushes scissors. Player 1 Wins!" : "Paper covers rock. Player 2 Wins!";
+      }
+      else if (_player1Choice == "paper" && _player2Choice != "paper")
+      {
+        return (_player2Choice == "rock") ? "Paper covers rock. Player 1 Wins!" : "Scissors cut paper. Player 2 Wins!";
+      }
+      else if (_player1Choice == "scissors" && _player2Choice != "scissors")
+      {
+        return (_player2Choice == "paper") ? "Scissors cut paper. Player 1 Wins!" : "Rock crushes scissors. Player 2 Wins!";
+      }
+      return "It's a Draw";
+    }
+
     public string DetermineWinner()
     {
       if(_player1Choice == "rock" && _player2Choice == "scissors")
